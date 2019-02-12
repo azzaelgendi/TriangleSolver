@@ -1,6 +1,6 @@
 ﻿/*Prog 2070-Quality Assurance 
  * Winter 2019
- * Assignment 1 ,TriangleSolver App
+ * Assignment 2 ,TriangleSolver App
  * Revision History :Azza Elgendy
  *February 11th,2019
  */
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 /// <summary>
 /// program to analyze 3 integers if 
-/// they for a valid triangle
+/// they form a valid triangle
 /// check the triangle type
 /// </summary>
 namespace PROG2070Assign2
@@ -21,7 +21,7 @@ namespace PROG2070Assign2
         static void Main(string[] args)
         {
             //program variables
-            int sideA = 0; 
+            int sideA = 0;
             int sideB = 0;
             int sideC = 0;
             bool correct = true;
@@ -36,7 +36,7 @@ namespace PROG2070Assign2
                 try
                 {
                     //read the user entry
-                    mainMenus = int.Parse(Console.ReadLine()); 
+                    mainMenus = int.Parse(Console.ReadLine());
                 }
                 catch (FormatException ex)
                 {

@@ -1,6 +1,6 @@
 ﻿/*Prog 2070-Quality Assurance 
  * Winter 2019
- * Assignment 1 ,TriangleSolver Class
+ * Assignment 2 ,TriangleSolver Class
  * Revision History :Azza Elgendy
  *February 11th,2019
  */
