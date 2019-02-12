@@ -16,12 +16,12 @@ namespace PROG2070Assign2
     {
         static void Main(string[] args)
         {
+            //program variables
             int sideA = 0;
             int sideB = 0;
             int sideC = 0;
             bool correct = true;
             bool sidesBool = true;
-
             int mainMenus = 0;
 
             do
@@ -34,17 +34,7 @@ namespace PROG2070Assign2
                 {
                     //read the user entry
                     mainMenus = int.Parse(Console.ReadLine());
-
-                    if (mainMenus < 0)
-                    {
-                        //error message
-                        Console.WriteLine("Please Enter a valid entry 1 or 2");
-                    }
-                    else
-                    {
-                        correct = false;
-
-                    }
+                    
                 }
                 catch (FormatException ex)
                 {
@@ -53,43 +43,46 @@ namespace PROG2070Assign2
                 }
 
 
-            } while (correct == true);
-
-            switch (mainMenus)
-            {
-                case 1:
-
-                    try
-                    {
+                switch (mainMenus)
+                {
+                    case 1:
+                        try
+                        {
                             Console.WriteLine("Please Enter the First side");
                             sideA = int.Parse(Console.ReadLine());
+
                             Console.WriteLine("Please Enter the Second side");
                             sideB = int.Parse(Console.ReadLine());
+
                             Console.WriteLine("Please Enter the Third side");
                             sideC = int.Parse(Console.ReadLine());
-                            sidesBool = false;
-                            TriangleSolver.Analyze(sideA, sideB, sideC);
-                            Console.WriteLine(TriangleSolver.result);
 
-                    }
-                    catch (Exception)
-                    {
+                        }
+                        catch (Exception)
+                        {
 
-                        Console.WriteLine("The entry was not in the correct format");
-                        sidesBool = true;
-                    }
-                    break;
-                case 2:
-                    Environment.Exit(0);
-                    break;
-                default:
-                    Console.WriteLine("Your entry wasnot correct !try again ");
+                            Console.WriteLine("Error in  the data side");
+                        }
 
-                    break;
-            }
+                        TriangleSolver.Analyze(sideA, sideB, sideC);
+                        Console.WriteLine(TriangleSolver.result);
+                        break;
+                    case 2:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Your entry wasnot correct !try again ");
+                        Console.WriteLine("___________________________________________");
+
+                        break;
+                }
+
+
+            } while (correct);
+
+
 
             Console.Read();
-
         }
     }
 }
