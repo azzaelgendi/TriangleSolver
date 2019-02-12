@@ -16,16 +16,21 @@ namespace PROG2070Assign2
         /// <param name="a">side A of the triangle </param>
         /// <param name="b">side B of the triangle</param>
         /// <param name="c">side Cof the triangle</param>
-        /// <returns></returns>
+        /// <returns>result string</returns>.
         public static string Analyze(int a, int b, int c)
         {
             // array to hold the sides
             int[] values = new int[3] { a, b, c };
 
             // doing the check
-            if (a <= 0 || b <= 0 || c <= 0)
+            if (a < 0 || b < 0 || c < 0)
             {
-                result = "These numbers less or equal zero cannot form a triangle";
+                result = "These numbers less than zero cannot form a triangle";
+                return result;
+            }
+            if (a == 0 || b == 0 || c == 0)
+            {
+                result = "These numbers  equal zero cannot form a triangle";
                 return result;
             }
             if (a + b < c || a + c < b || c + b < a)
@@ -50,7 +55,7 @@ namespace PROG2070Assign2
             }
             else
             {
-                result = "These numbers cannot form a triangle";
+                result = "Error:These entries cannot form a triangle";
                 return result;
             }
         }

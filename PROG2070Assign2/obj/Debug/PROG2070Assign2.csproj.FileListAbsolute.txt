@@ -1,7 +1,6 @@
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\bin\Debug\PROG2070Assign2.exe.config
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\bin\Debug\PROG2070Assign2.exe
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\bin\Debug\PROG2070Assign2.pdb
-C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\obj\Debug\PROG2070Assign2.csprojAssemblyReference.cache
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\obj\Debug\PROG2070Assign2.csproj.CoreCompileInputs.cache
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\obj\Debug\PROG2070Assign2.exe
 C:\Users\AZZA ELGENDY\Desktop\PROG2070Assign2\PROG2070Assign2\obj\Debug\PROG2070Assign2.pdb
